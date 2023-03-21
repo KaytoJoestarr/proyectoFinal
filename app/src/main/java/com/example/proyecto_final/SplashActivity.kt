@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Configura un temporizador para cerrar la actividad después de 2 segundos
         Handler().postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
             finish()
         }, 2000)

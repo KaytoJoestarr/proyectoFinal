@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="125dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_imageview"
+        android:orientation="vertical"
+        android:padding="100dp">
+
+        <Button
+            android:id="@+id/mis_tareas_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/user_imageview"
+            android:text="Mis Tareas" />
+
+        <Button
+            android:id="@+id/hogar_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/mis_tareas_button"
+            android:text="Hogar" />
+
+        <Button
+            android:id="@+id/habitacion_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/hogar_button"
+            android:text="Habitación"/>
+
+        <Button
+            android:id="@+id/notas_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/habitacion_button"
+            android:text="Notas" />
+
+        <Button
+            android:id="@+id/calendario_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/habitacion_button"
+            android:text="Calendario"  />
+
+        <Button
+            android:id="@+id/puntuacion_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/calendario_button"
+            android:text="Puntuación"  />
+
+    </LinearLayout>
+
+</RelativeLayout>

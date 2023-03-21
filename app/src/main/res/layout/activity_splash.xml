@@ -4,9 +4,21 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="149dp"
-        android:layout_height="375dp"
+        android:id="@+id/logo_imageview"
+        android:layout_width="219dp"
+        android:layout_height="491dp"
         android:layout_centerInParent="true"
         android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Cargando.." />
+
 
 </RelativeLayout>
