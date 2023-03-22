@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="125dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_imageview"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Nombre de Usuario" />
+
+    <LinearLayout
+        android:id="@+id/ly_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="#D7D7D7"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/tarea_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_imageview"
+            android:layout_centerHorizontal="true"
+            android:text="Nombre de la tarea"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/tarea_detalle"
+            android:layout_width="268dp"
+            android:layout_height="157dp"
+            android:layout_below="@+id/tarea_name"
+            android:layout_centerHorizontal="true"
+            android:text="Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea Detalle Tarea"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

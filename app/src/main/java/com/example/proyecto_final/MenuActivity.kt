@@ -1,5 +1,6 @@
 package com.example.proyecto_final
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -12,9 +13,14 @@ class MenuActivity : AppCompatActivity() {
             setContentView(R.layout.activity_menu)
 
             val btn1 = findViewById<Button>(R.id.mis_tareas_button)
-            btn1.setOnClickListener {
-                Toast.makeText(this, "Option 1 selected", Toast.LENGTH_SHORT).show()
+
+                btn1.setOnClickListener {
+                    val intent = Intent(this, TareasActivity::class.java)
+                    Toast.makeText(this, "Mis Tareas selected", Toast.LENGTH_SHORT).show()
+                    startActivity(intent)
+
             }
+
 
             val btn2 = findViewById<Button>(R.id.hogar_button)
             btn2.setOnClickListener {
@@ -41,8 +47,14 @@ class MenuActivity : AppCompatActivity() {
                 Toast.makeText(this, "Option 6 selected", Toast.LENGTH_SHORT).show()
             }
 
-        }
     }
+
+}
+
+
+
+
+
 
 
 

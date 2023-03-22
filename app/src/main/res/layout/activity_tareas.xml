@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_imageview"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Nombre de Usuario" />
+
+    <LinearLayout
+        android:id="@+id/ly_tareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/boton_tarea"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_below="@+id/titulo_tarea"
+            android:text="Nombre de la tarea"
+            />
+
+        <Button
+            android:id="@+id/boton_tarea2"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_below="@+id/titulo_tarea2"
+            android:text="Nombre de la tarea"
+            />
+        <Button
+
+            android:id="@+id/boton_tarea3"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_below="@+id/titulo_tarea3"
+            android:text="Nombre de la tarea"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_tareas"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:padding="16dp"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp" />
+
+
+</RelativeLayout>

@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Proyecto_final"
         tools:targetApi="31">
         <activity
+            android:name=".DetalleTareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TareasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisTareasActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
