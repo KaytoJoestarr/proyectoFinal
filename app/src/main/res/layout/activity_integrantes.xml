@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".IntegrantesActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <DigitalClock
+                android:id="@+id/digital_clock"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hogar"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:background="@color/material_dynamic_neutral80"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrantes del Hogar"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:background="@color/material_dynamic_neutral80"
+            />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/ImageUser_add"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_add_box_24"/>
+
+            <TextView
+                android:id="@+id/textUser_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="100dp">
+
+
+            <ImageView
+                android:id="@+id/user_image1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="140dp">
+
+
+            <ImageView
+                android:id="@+id/user_image2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user"
+                />
+
+            <TextView
+                android:id="@+id/user_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="100dp">
+
+
+            <ImageView
+                android:id="@+id/user_image3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="140dp">
+
+
+            <ImageView
+                android:id="@+id/user_image4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user"
+                />
+
+            <TextView
+                android:id="@+id/user_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/material_dynamic_neutral80"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mascota"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/ImagePet_add"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pet"/>
+
+        <TextView
+            android:id="@+id/textPet_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mascota"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:text="Agregar mascota"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
