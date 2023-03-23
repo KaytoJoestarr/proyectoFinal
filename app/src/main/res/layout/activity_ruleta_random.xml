@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_imageview"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Nombre de Usuario" />
+
+    <LinearLayout
+        android:id="@+id/ly_TaskAtHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/textViewTaskAtHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Tarea en juego"/>
+
+        <TextView
+            android:id="@+id/textViewTaskAtHandSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="'Nombre de la tarea'"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ruleta_imageview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/ly_TaskAtHand"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ruleta" />
+
+    <ImageView
+        android:id="@+id/ruletaRow_imageview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ly_TaskAtHand"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/ruletarow" />
+
+
+</RelativeLayout>

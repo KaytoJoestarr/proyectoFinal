@@ -44,6 +44,14 @@ class TareasActivity : AppCompatActivity() {
 
         }
 
+        val btn5 = findViewById<Button>(R.id.boton_ruleta)
+        btn5.setOnClickListener {
+            val intent = Intent(this, RuletaRandomActivity::class.java)
+            Toast.makeText(this, "Ruleta selected", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+
+        }
+
     }
 
 }
