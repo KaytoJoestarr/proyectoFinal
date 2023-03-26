@@ -5,10 +5,10 @@
 
     <ImageView
         android:id="@+id/logo_imageview"
-        android:layout_width="208dp"
-        android:layout_height="422dp"
+        android:layout_width="329dp"
+        android:layout_height="358dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/logo" />
 
     <TextView
@@ -19,15 +19,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Bienvendido"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/sign_out_button"
+        android:background="@drawable/rounded_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/welcome_textview"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="Iniciar Sesión" />
+        android:layout_marginTop="50dp"
+        android:text="Iniciar Sesión"
+        />
 
 </RelativeLayout>

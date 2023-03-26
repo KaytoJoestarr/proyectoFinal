@@ -1,78 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/inicio_sesion">
 
-    <ImageView
-        android:id="@+id/logo_imageview"
-        android:layout_width="88dp"
-        android:layout_height="113dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo" />
-
-    <EditText
-        android:id="@+id/username_edittext"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_imageview"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Correo Eléctronico"
-        android:inputType="text"
-        android:maxLines="1" />
+        android:src="@drawable/btn_atras"
+        android:background="@null"
+        android:padding="10dp"/>
 
-    <EditText
-        android:id="@+id/password_edittext"
+    <LinearLayout
+        android:id="@+id/ly_contenido"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username_edittext"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Contrseña"
-        android:inputType="textPassword"
-        android:maxLines="1" />
+        android:layout_height="322dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/text_crear_sesion"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
 
-    <EditText
-        android:id="@+id/confirm_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password_edittext"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Confirmar Contraseña"
-        android:inputType="textPassword"
-        android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/logo_imageview"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFF8C3"
+            android:gravity="center"
+            android:hint="Correo Eléctronico"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/username_edittext"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFF8C3"
+            android:gravity="center"
+            android:hint="Contrseña"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/password_edittext"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFF8C3"
+            android:gravity="center"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/create_account_button"
-        android:layout_width="wrap_content"
+        android:layout_width="142dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/confirm_password"
+        android:layout_below="@+id/ly_contenido"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Crear Cuenta" />
+        android:background="@drawable/rounded_button"
+        android:text="Crear" />
 
     <TextView
-        android:id="@+id/text_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/text_crear_sesion"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="CREAR CUENTA"
+        android:textSize="20sp"
+        android:typeface="normal"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="72dp"
+        android:layout_height="68dp"
         android:layout_below="@+id/create_account_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text=" otra Opción.." />
-
-    <Button
-        android:id="@+id/create_account_facebook_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_register"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="Acceder con Fabebook" />
+        android:layout_marginTop="130dp"
+        android:src="@drawable/logo" />
 
 
 </RelativeLayout>

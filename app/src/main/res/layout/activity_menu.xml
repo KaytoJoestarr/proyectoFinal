@@ -1,83 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/inicio_fondo">
 
     <ImageView
         android:id="@+id/user_imageview"
-        android:layout_width="125dp"
-        android:layout_height="164dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/user" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/perfil1" />
 
     <TextView
         android:id="@+id/user_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
         android:layout_below="@+id/user_imageview"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
         android:text="Nombre de Usuario" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+
+    <TextView
+        android:id="@+id/txt_inicio"
+        android:layout_width="297dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/user_name"
-        android:layout_marginTop="28dp"
-        android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:padding="50dp">
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="INICIO"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <Button
+
+    <LinearLayout
+        android:id="@+id/ly_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txt_inicio"
+        android:gravity="center">
+
+        <ImageButton
             android:id="@+id/mis_tareas_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/user_imageview"
-            android:layout_centerHorizontal="true"
-            android:text="Mis Tareas" />
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#15B4B4"
+            android:src="@drawable/icono_tarea"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/hogar_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/mis_tareas_button"
-            android:layout_centerHorizontal="true"
-            android:text="Hogar" />
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#F8F5DD"
+            android:src="@drawable/icono_hogar"
+            android:text="Botón 2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/habitacion_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/hogar_button"
-            android:layout_centerHorizontal="true"
-            android:text="Habitación" />
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/icono_habitacion"
+            android:background="#15B4B4"
+            android:text="Botón 3"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"/>
 
-        <Button
-            android:id="@+id/notas_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/habitacion_button"
-            android:layout_centerHorizontal="true"
-            android:text="Notas" />
-
-        <Button
-            android:id="@+id/calendario_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/habitacion_button"
-            android:layout_centerHorizontal="true"
-            android:text="Calendario" />
-
-        <Button
-            android:id="@+id/puntuacion_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/calendario_button"
-            android:layout_centerHorizontal="true"
-            android:text="Puntuación" />
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_botones2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_botones"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/notas_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#15B4B4"
+            android:src="@drawable/icono_notas"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/calendario_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#F8F5DD"
+            android:src="@drawable/icono_calendario"
+            android:text="Botón 2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/puntuacion_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/icono_puntuacion"
+            android:background="#15B4B4"
+            android:text="Botón 3"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>

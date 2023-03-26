@@ -2,66 +2,112 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/inicio_sesion">
 
-    <ImageView
-        android:id="@+id/logo_imageview"
-        android:layout_width="125dp"
-        android:layout_height="164dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/username_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_imageview"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Correo Eléctronico"
-        android:inputType="text"
-        android:maxLines="1" />
+    <LinearLayout
+        android:id="@+id/ly_contenido"
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
 
-    <EditText
-        android:id="@+id/password_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username_edittext"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:maxLines="1" />
 
-    <Button
-        android:id="@+id/in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password_edittext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="Iniciar Sesion" />
+        <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_inicio_sesion"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8C3"
+            android:gravity="center"
+            android:hint="Correo Eléctronico"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/text_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/in_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="ó Crea una cuenta.." />
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_edittext"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8C3"
+            android:gravity="center"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/text_olc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edittext"
+            android:text="¿Olvidate la contraseña?" />
+
+        <Button
+            android:id="@+id/in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_edittext"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="40dp"
+            android:radius="20dp"
+            android:text="Iniciar Sesion" />
+
+        <TextView
+            android:id="@+id/text_iscc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/in_button"
+            android:text="Inicia sesión con tu cuenta" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/create_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_register"
+        android:layout_below="@+id/ly_contenido"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
         android:text="Crear Cuenta" />
+
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="72dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/create_account_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text_inicio_sesion"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="INICIAR SESIÓN"
+        android:textSize="20sp"
+        android:typeface="normal"
+        android:visibility="visible" />
 
 
 </RelativeLayout>

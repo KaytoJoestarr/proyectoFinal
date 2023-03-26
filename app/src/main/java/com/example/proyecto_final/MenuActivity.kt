@@ -3,6 +3,7 @@ package com.example.proyecto_final
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,7 +13,7 @@ class MenuActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_menu)
 
-            val btn1 = findViewById<Button>(R.id.mis_tareas_button)
+            val btn1 = findViewById<ImageButton>(R.id.mis_tareas_button)
 
                 btn1.setOnClickListener {
                     val intent = Intent(this, TareasActivity::class.java)
@@ -21,31 +22,32 @@ class MenuActivity : AppCompatActivity() {
 
             }
 
-
-            val btn2 = findViewById<Button>(R.id.hogar_button)
+            val btn2 = findViewById<ImageButton>(R.id.hogar_button)
             btn2.setOnClickListener {
-                Toast.makeText(this, "Option 2 selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Mi Hogar selected", Toast.LENGTH_SHORT).show()
             }
 
-            val btn3 = findViewById<Button>(R.id.habitacion_button)
+            val btn3 = findViewById<ImageButton>(R.id.habitacion_button)
             btn3.setOnClickListener {
-                Toast.makeText(this, "Option 3 selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Mi Habitación selected", Toast.LENGTH_SHORT).show()
             }
 
-            val btn4 = findViewById<Button>(R.id.notas_button)
+
+            val btn4 = findViewById<ImageButton>(R.id.notas_button)
             btn4.setOnClickListener {
-                Toast.makeText(this, "Option 4 selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Mis Notas selected", Toast.LENGTH_SHORT).show()
             }
 
-            val btn5 = findViewById<Button>(R.id.calendario_button)
+            val btn5 = findViewById<ImageButton>(R.id.calendario_button)
             btn5.setOnClickListener {
-                Toast.makeText(this, "Option 5 selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Calendario selected", Toast.LENGTH_SHORT).show()
             }
 
-            val btn6 = findViewById<Button>(R.id.puntuacion_button)
+            val btn6 = findViewById<ImageButton>(R.id.puntuacion_button)
             btn6.setOnClickListener {
-                Toast.makeText(this, "Option 6 selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Puntuación 6 selected", Toast.LENGTH_SHORT).show()
             }
+
 
     }
 
