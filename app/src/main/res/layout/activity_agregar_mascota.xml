@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< Updated upstream
     tools:context=".AgregarMascotaActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -41,10 +42,76 @@
                     android:text="Nombre de usuario"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+=======
+    android:background="@drawable/fondo_agregar"
+    tools:context=".AgregarMascotaActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corner"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <DigitalClock
+                        android:id="@+id/digital_clock"
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="90dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/perfil1" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre de usuario"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+>>>>>>> Stashed changes
 
 
             </LinearLayout>
 
+<<<<<<< Updated upstream
             <DigitalClock
                 android:id="@+id/digital_clock"
                 android:layout_width="129dp"
@@ -206,6 +273,156 @@
 
 
 
+=======
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_atras"
+                    android:background="@null"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mi Hogar"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="100dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elige un nombre"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="para tu mascota"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="#FFF8C3"
+                    android:gravity="center"
+                    android:hint="Nombre..." />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="50dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elige Mascota"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/conejo"
+                    android:scaleType="fitCenter"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gato"
+                    android:scaleType="fitCenter"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pajaro"
+                    android:scaleType="fitCenter"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/perro"
+                    android:scaleType="fitCenter"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/botonContinuar"
+                android:layout_width="150dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:text="Continuar"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+>>>>>>> Stashed changes
 
 
 </LinearLayout>

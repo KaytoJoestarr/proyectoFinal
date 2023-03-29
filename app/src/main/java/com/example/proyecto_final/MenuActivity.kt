@@ -18,7 +18,12 @@ class MenuActivity : AppCompatActivity() {
 
             val btn2 = findViewById<Button>(R.id.hogar_button)
             btn2.setOnClickListener {
+<<<<<<< Updated upstream
                 Toast.makeText(this, "Option 2 selected", Toast.LENGTH_SHORT).show()
+=======
+                val intent = Intent(this, IntegrantesActivity::class.java)
+                startActivity(intent)
+>>>>>>> Stashed changes
             }
 
             val btn3 = findViewById<Button>(R.id.habitacion_button)
